@@ -5,7 +5,7 @@ import { Search_bar } from "./serchBar";
 
 export const Nav_bar = () => {
   return (
-    <div className='bg-[#020140] flex flex-row items-center sticky  top-0  p-2 justify-between w-screen'>
+    <div className='bg-[#020140] flex flex-row items-center z-20 sticky  top-0  p-2 justify-between w-screen'>
       <Menu />
       <div className='w-1/5'>
         <img src={logo} />
