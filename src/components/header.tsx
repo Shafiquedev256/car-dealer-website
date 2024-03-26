@@ -34,9 +34,9 @@ export const Header = () => {
 
       <Slide>
         {slideImages.map((slideImage, index) => (
-          <div key={index} className='h-[15rem] md:h-[30rem]'>
+          <div key={index} className='h-[30vh] md:h-[30rem]'>
             <div
-              className='bg-center bg-cover flex item-center justify-center h-[100%]'
+              className='object-center bg-cover flex item-center justify-center h-[100%]'
               style={{ backgroundImage: `url(${slideImage.url})` }}
             ></div>
           </div>
