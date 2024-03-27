@@ -10,7 +10,12 @@ export const Row_menu = () => {
         Shop By Category
       </div>
       <div className='hidden md:block'>
-        <Slide slidesToScroll={1} slidesToShow={7} arrows={false}>
+        <Slide
+          slidesToScroll={1}
+          slidesToShow={7}
+          arrows={true}
+          transitionDuration={500}
+        >
           {products.map((slideImage, index) => (
             <div
               key={index}
@@ -27,7 +32,7 @@ export const Row_menu = () => {
         </Slide>
       </div>
       <div className='block md:hidden'>
-        <Slide slidesToScroll={1} slidesToShow={3} arrows={false}>
+        <Slide slidesToScroll={1} slidesToShow={2} arrows={true}>
           {products.map((slideImage, index) => (
             <div
               key={index}

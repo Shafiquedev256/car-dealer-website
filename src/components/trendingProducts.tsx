@@ -12,7 +12,8 @@ export const Trending_products = () => {
             slidesToScroll={1}
             slidesToShow={5}
             indicators={false}
-            arrows={false}
+            arrows={true}
+            transitionDuration={150}
           >
             {topProducts.map((item) => (
               <div
@@ -44,7 +45,8 @@ export const Trending_products = () => {
             slidesToScroll={1}
             slidesToShow={2}
             indicators={false}
-            arrows={false}
+            arrows={true}
+            transitionDuration={1500}
           >
             {topProducts.map((item) => (
               <div
