@@ -1,3 +1,4 @@
+import { Footer } from "../components/footer";
 import { Header } from "../components/header";
 import { Nav_bar } from "../components/navBar";
 import { Newslet } from "../components/newsLett";
@@ -5,6 +6,7 @@ import { Shop_by_category } from "../components/shoppingCategory";
 import { Testimony } from "../components/testimony";
 import { Top_products } from "../components/topProducts";
 import { Trending_products } from "../components/trendingProducts";
+import { Trust_Usfooter } from "../components/trustComp";
 
 const Home_page = () => {
   return (
@@ -28,6 +30,8 @@ const Home_page = () => {
         Topselling Collection
       </div>
       <Trending_products />
+      <Trust_Usfooter />
+      <Footer />
     </>
   );
 };

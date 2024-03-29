@@ -35,8 +35,11 @@ export const Top_products = () => {
         </div>
         <div className='md:hidden w-screen'>
           <div className='grid grid-cols-2 gap-3 p-4 ml-3 w-[100%]'>
-            {topProducts.map((item) => (
-              <div className=' w-[70%]  relative md:w-[250px] justify-center my-2 flex flex-col items-center'>
+            {topProducts.map((item, index: number) => (
+              <div
+                key={index}
+                className=' w-[70%]  relative md:w-[250px] justify-center my-2 flex flex-col items-center'
+              >
                 <img src={item.url} className='w-[100%]' />
                 <span className='bg-red-600 w-fit rounded text-white text-xs p-1 absolute top-0 right-0  z-10   '>
                   New
